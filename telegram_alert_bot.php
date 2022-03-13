@@ -6,7 +6,7 @@
 
 	$WEBAPI_TOKEN = "";                   // token used to authenticate to this endpoint (arbitrary string)
 
-  // EXAMPLE: curl 127.0.0.1:8888/telegram_alert_bot.php -H 'token: my_webapi_token' -X POST -d 'message=hello world'
+  	// EXAMPLE: curl 127.0.0.1:8888/telegram_alert_bot.php -H 'token: my_webapi_token' -X POST -d 'message=hello world'
 
 
 
@@ -73,9 +73,8 @@
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
 			//for debug only!
-
-			curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-			curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+			// curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+			// curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 
 			
 			$content = curl_exec($curl);
